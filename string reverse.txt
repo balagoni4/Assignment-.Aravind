@@ -1,0 +1,10 @@
+let toBeReversed: string = `hello`;
+
+let charArray: string[] = toBeReversed.split('');
+console.log(charArray);
+
+let reverseArray: string[] = charArray.reverse();
+console.log(reverseArray);
+
+let reversedArray: string = reverseArray.join('');
+console.log(reversedArray);

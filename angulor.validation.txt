@@ -1,0 +1,47 @@
+<html>
+  <head><title>simple form</title></head>
+  <body>    
+      
+    <hr>    
+    <form #simpleForm="ngForm" (ngsubmit)="getuservalue(simpleForm.value)" >     
+        <h2>Registration Form</h2>    
+        <table>    
+            <tr>    
+                <td><label>First Name: </label></td>    
+                <td>    
+                    <input type="text" ngModel name="fname" placeholder="First Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Last Name: </label></td>    
+                <td>    
+                    <input type="text" ngModel name="lname" placeholder="Last Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Address: </label></td>    
+                <td>    
+                    <input type="textarea" ngModel  name="address" placeholder="Address">    
+                </td>    
+            </tr>       
+            <tr>    
+                <td><label>Email Id: </label></td>    
+                <td>    
+                    <input type="text" ngModel name="email" placeholder="example@gmail.com">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Mobile: </label></td>    
+                <td>    
+                    <input type="number" ngModel name="mobile">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td>    
+                    <button>submit</button>   
+                </td>    
+            </tr>             
+        </table>    
+    </form>    
+</body>
+</html>

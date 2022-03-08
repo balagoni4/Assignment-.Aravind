@@ -1,0 +1,42 @@
+class person {
+    name: string;
+        
+    constructor(name: string) {
+        this.name = name;
+    }
+    
+    disp(age:number = 0) {
+        console.log('my name is '+this.name);
+        console.log('my age is '+age);
+    }
+}
+
+class employee extends person {
+    
+    constructor(name: string) {
+        super(name);
+    }
+    
+    disp(age = 35) {
+        console.log('Employee');
+        super.disp(age);
+    }
+}
+
+class student extends person {
+    
+    constructor(name: string) {
+        super(name);   
+    }
+    
+    disp(age = 22) {
+        console.log('student');
+        super.disp(age);
+    }
+}
+
+var em = new employee('Tej');
+var st = new student('Karun');
+
+em.disp();
+st.disp();

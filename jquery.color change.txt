@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>jquery assessment</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#cricket").on("click",  function(event){
+    $(event.delegateTarget).css("background-color", "#ffffe0");
+  });
+  $("#foodball").on("click",  function(event){
+    $(event.delegateTarget).css("background-color", "#ffc0cb");
+  });
+  $("#hockey").on("click",  function(event){
+    $(event.delegateTarget).css("background-color", "#add8e6" );
+  });
+  $("#tennis").on("click",  function(event){
+    $(event.delegateTarget).css("background-color", "#d3d3d3");
+  });
+});
+</script>
+    </head>
+    <script>
+        function gridchange(id){
+            
+        }
+    </script>
+    <body>
+        <div style="margin-left: 400px; margin-top: 200px;" >
+            <form>
+            <input  id="cricket" name="cricket ground" value="cricket" onclick="gridchange('cricket')">
+            <input  id="foodball" name="foodball ground" value="food ball" onclick="gridchange('foodball')">
+            <br/>
+            <input  id="hockey" name="cricket ground" value="hockey" onclick="gridchange('hockey')">
+            <input  id="tennis" name="cricket ground" value="tennis" onclick="gridchange('tennis')">
+            </form>
+
+        </div>
+    </body>
+</html>
+-------------------------------------------------------------------------------------------
+input{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background: red;
+    margin-top: 4px;
+}

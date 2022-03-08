@@ -1,0 +1,18 @@
+function check(x) {
+    if (x%4 == 0)
+    {
+        console.log("leap year");
+    }
+    else if (x%100 == 0) {
+        console.log(" not leap year");
+    }
+    else if (x%400 == 0) {
+        console.log("leap year");
+    }
+    else {
+        console.log("Not leap year");
+    }
+    
+}
+ let x = 2000;
+check(x);

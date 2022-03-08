@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> RESUME </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<style>
+  .menubar-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.menubar-desktop{
+    background: coral; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    padding: 10px 20px;
+}
+.menubar-desktop li{
+    background: coral;
+    border: none;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.menubar-desktop li  a{
+    text-decoration: none;
+    font-weight: 700;
+    color: aliceblue;
+}
+.profile_image{
+    padding: 20px;
+    text-align: center;
+}
+.profile_image img{
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+    border: 10px solid salmon;
+
+}
+.main-content{
+    padding-left: 20%;
+    background: white;
+    margin-bottom: 0;
+}
+.main-content par {
+  text-align: center;
+}
+
+.container4{
+    height: 10em;
+    position: absolute;
+    top: 40%;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    color: blue;
+}
+p{
+    text-align: center;
+}
+</style>
+
+<body id="top_page">
+
+<div class="menubar-mobile">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Aravind Balagoni</a>
+   
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#top_page">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Pro.html">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skill.html">Skills</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="Pers.html">Personal</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="menubar-desktop">
+  <div class="profile_image">
+    <img src="3.jpeg">
+  </div>
+  <div class="container">
+    <ul class="list-group">
+      <li class="list-group-item"><a href="#top_page">About</a></li>
+      <li class="list-group-item"><a href="pro.html">Education</a></li>
+      <li class="list-group-item"><a href="skill.html">skills</a></li>
+      <li class="list-group-item"><a href="pers.html">Personal</a></li>      
+    </ul>
+  </div>
+</div>
+
+<div class="main-content">
+    <section id="about">
+      <div class="container4"><h1>Aravind Balagoni</h1>
+
+      <p class="par">
+        I am a talented, ambitious and hardworking individual, with broad skills and experience Front and backend technologies, leading projects.<br>
+Furthermore, I am adept at handling multiple tasks on a daily basis competently and at working well under pressure.<br>
+
+A key strength is communication; building strong relationships with people in order to deliver the best results.</p>
+
+        <br/><br/></div>
+
+
+
+    </section>
+    
+</div>
+
+</body>
+</html>
+----------------------------------------------------------------------------------------
+<section id="education">
+  <body style="background-color: powderblue;">
+
+    <style>
+        div{
+            text-align: center;
+        }
+        h2{color: blue;}
+        h3{color: red;}
+        
+    </style>
+    <h2>Education</h2>
+
+    <div class="card bg-dark mb-3 text-white">
+      <div class="card-body">
+        <h3 class="card-title">Bachelor Degree</h3>
+        <p>
+         Graduated from Vaageswari college of Engineering in the stream of Electrical and Electronics Engineering,with an aggregate of 70.31%.</p>
+      </div>
+    </div>
+    <div class="card bg-dark mb-3 text-white">
+      <div class="card-body">
+        <h3 class="card-title">Diploma</h3>
+        <p>
+        Completed my diploma from Jyothismathi Institute of Technology and sciences in the stream of Electrical and Electronics Engineering,with an aggregate of 89.2%</p>
+      </div>
+    </div>
+    <div class="card bg-dark mb-3 text-white">
+      <div class="card-body">
+        <h3 class="card-title">Schooling</h3>
+        <p>
+          Completed my school education from st.Joseph's high school with CGPA of 9.2.</p>
+      </div>
+    </div>
+  </section>
+  
+  </section>
+---------------------------------------------------------------------------------------------
+<section id="skill">
+    <h2>Skill</h2>
+
+    <div class="mb-3">
+      <h3>Technical</h3>
+      <ol>
+          <li> Java</li>
+          <li> Html,css,javascript</li>
+          <li> Operating systems</li>
+          <li> Matlab</li>
+      </ol>
+    </div>
+
+    <h3>Intership</h3>
+
+    <p>Undergone intership for a period of six months on testing and manufacturing of LED Drivers in NGE PVT LMT.</p>
+    <h3>Projects</h3>
+    <ol>
+        <li> Assessment and Enhancement of PMSG based synchronous generator under fault conditions.</li>
+        <li> Developed website for Aarogya Hospitals</li>
+        <li> Automatic switching of lights based upon the lighting conditions by LDR.</li>
+        
+    </ol>
+    </div>
+
+
+  </section>
+---------------------------------------------------------------------
+
+<section id="Personal">
+    <div class="mb-3">
+
+        <h3>Personal Information</h3>
+        
+          <ul>
+              <li><b>NAME</b> : Aravind Balagoni</li><br>
+              <li><b>Address</b> : H-no:1-67,<br>Dilsuknagar,<br>Hyderabad,<br>pincode-500016</li><br>
+              <li><b>Contact </b> : 8499062482</li><br>
+              <li><b>Email</b> : aravindbalagoni@gmail.com</li>
+      
+          </ul>
+        </div>
+
+      </div>
+   
+    </section>

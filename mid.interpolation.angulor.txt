@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head><title> Interpolation </title></head>
+<body>
+<b>{{ title}}-Interpolation </b><br>
+
+<div class="rec">
+  <p class="big">
+<b>Rectangle : {{getVal()}}</b> <br>
+<b> Area of Rectangle 
+: {{getAreaRectangle()}}</b>
+</p>
+</div>
+<div class="sq">
+  <p class="big">
+<b>Square : {{getAal()}}</b> <br>
+<b> Area of Square 
+  : {{getAreaSquare()}}</b>
+</p>
+</div>
+  <div class="tri">
+    <p class="big">
+  <b>Triangle : {{getBal()}}</b> <br>
+  <b> Area of Triangle 
+    : {{getAreaTriangle()}}</b>
+  </p>
+  </div>
+</body>
+</html>
+------------------------------------------------------------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'interp';
+
+  getVal() {
+return 'length*breadth'
+
+  }
+  getAreaRectangle() {
+    return 4*5
+  }
+
+  getAal() {
+    return 'side*side'
+    
+      }
+      getAreaSquare() {
+        return 5*5
+      }
+
+      getBal() {
+        return '(base*height)/2'
+        
+          }
+          getAreaTriangle() {
+            return (4*5)/2
+          }
+
+}
+----------------------------------------------------------------------------------
+.rec{
+    background-color: blue;
+}
+.sq{
+    background-color:greenyellow;
+}
+.tri{
+    background-color: orange;
+}

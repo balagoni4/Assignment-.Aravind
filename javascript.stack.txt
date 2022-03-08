@@ -1,0 +1,49 @@
+class Stack {
+   constructor() {
+       this.items =[];
+       this.count=0;
+   }
+
+   push(element) {
+this.items[this.count]=element;
+console.log("new element added to the stack is ", element);
+this.count=this.count+1;
+       return this.count-1;
+   }
+   pop(){
+       if(this.count==0) 
+       return undefined;
+       let deleteItem=this.items[this.count-1];
+       this.count=this.count-1;
+console.log("element removed from the stack is ", deleteItem);
+return deleteItem;    
+}
+peek(){
+   console.log("peek element is ", this.items[this.count-1]);
+return this.items[this.count-1];
+}
+isEmpty(){
+   if(this.count==0)
+   console.log("stack is empty");
+   else
+   console.log("stack is not empty");
+}
+size(){
+   console.log("number of elements in the stack are", this.count);
+}
+print(){
+   for(let i=0; i<this.count; i++)
+   console.log(" ", this.items[i]);
+}
+
+   
+}
+const stack = new Stack();
+stack.push(20);
+stack.push(30);
+stack.push(40);
+stack.peek();
+stack.size();
+stack.print();
+stack.pop();
+stack.isEmpty();
